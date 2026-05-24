@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>邵帅｜个人主页</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20260416-2">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-logo-link" href="#" aria-label="Sunny Shao">
+        <img class="site-logo" src="Logo-clean.png" alt="Sunny Shao Logo">
+      </a>
+      <nav class="tab-nav" aria-label="页面切换">
+        <button class="tab-button active" data-tab="home">首页</button>
+        <button class="tab-button" data-tab="about">关于我</button>
+        <button class="tab-button" data-tab="internship">实习经历</button>
+        <button class="tab-button" data-tab="projects">项目经历</button>
+        <button class="tab-button" data-tab="works">个人作品</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-shell">
+    <main id="app-main">
+      <section class="tab-panel active">
+        <article class="card">
+          <p class="sop-intro">正在加载网站内容…</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div class="lightbox" id="poster-lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="关闭预览">×</button>
+    <div class="lightbox-inner">
+      <p class="lightbox-title" id="lightbox-title"></p>
+      <img class="lightbox-image" id="lightbox-image" alt="">
+    </div>
+  </div>
+
+  <script src="script.js?v=20260416-2"></script>
+</body>
+</html>
