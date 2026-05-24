@@ -462,7 +462,7 @@ function showError(message) {
 
 async function loadSiteData() {
   try {
-    const response = await fetch(`/api/site-data?ts=${Date.now()}`);
+    const response = await fetch(`./website_texts.json?ts=${Date.now()}`);
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
@@ -471,7 +471,7 @@ async function loadSiteData() {
     renderSite(data);
     bindInteractions();
   } catch (error) {
-    showError(`内容加载失败，请通过本地服务打开网站。${error.message}`);
+    showError(`内容加载失败: ${error.message}`);
   }
 }
 
